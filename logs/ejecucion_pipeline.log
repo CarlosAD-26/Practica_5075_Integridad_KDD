@@ -1,0 +1,5 @@
+2026-11-12 20:37:54,746 [INFO] === FASE 1: verificación SHA-256 del lote raw_batch_202611 ===
+2026-11-12 20:37:54,746 [ERROR] AUSENTE   transacciones_tienda_norte.csv (listado en el manifiesto; descarga incompleta?)
+2026-11-12 20:37:54,746 [ERROR] AUSENTE   transacciones_tienda_sur.csv (listado en el manifiesto; descarga incompleta?)
+2026-11-12 20:37:54,747 [ERROR] AUSENTE   transacciones_tienda_este.csv (listado en el manifiesto; descarga incompleta?)
+2026-11-12 20:37:54,747 [INFO] RESUMEN FASE 1: 0 validados, 0 rechazados, 3 ausentes -> integridad 0.00%

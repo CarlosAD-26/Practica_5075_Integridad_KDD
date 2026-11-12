@@ -1,0 +1,27 @@
+QUARANTINE MANIFEST - lote raw_batch_202611 - 2026-11-12 20:37:49
+========================================================================
+
+[A] FICHEROS en quarantine/tampered/ (fallo de integridad SHA-256)
+  - transacciones_tienda_sur.csv
+      esperado  : 0773c2cde0d45d3bfea53ebe6a0ad9f8fd7f04dabd23f55e737f64918128b83c
+      calculado : 1c47dff4bf34eff59390c211052be942851d158740366ab4ab35159fd9986805
+      motivo    : FIRMA_DISCREPANTE
+
+[B] REGISTROS en quarantine/bad_records.csv: 10
+  origen                           linea  id_transaccion       motivo
+  transacciones_tienda_este.csv        4  <NULO>               id_transaccion_nulo
+  transacciones_tienda_este.csv       29  <NULO>               id_transaccion_nulo
+  transacciones_tienda_este.csv       35  TXE-20261110-0034    importe_eur_nulo
+  transacciones_tienda_este.csv       40  TXE-20261110-0039    timestamp_corrupto
+  transacciones_tienda_este.csv       11  TXE-20261110-0010    timestamp_futuro
+  transacciones_tienda_este.csv       23  TXE-20261110-0022    timestamp_anio_anterior
+  transacciones_tienda_este.csv       13  TXE-20261110-0012    importe_no_positivo
+  transacciones_tienda_este.csv       19  TXE-20261110-0018    importe_no_positivo
+  transacciones_tienda_este.csv       26  TXE-20261110-0025    unidades_menor_que_1
+  transacciones_tienda_este.csv       43  TXE-20261110-0042    unidades_menor_que_1
+
+[C] OUTLIERS en quarantine/outliers.csv: 3
+  origen                           linea  id_transaccion       motivo (valor)
+  transacciones_tienda_este.csv       17  TXE-20261110-0016    outlier_importe_eur (1480.0)
+  transacciones_tienda_este.csv       33  TXE-20261110-0032    outlier_importe_eur (2750.9)
+  transacciones_tienda_este.csv       48  TXE-20261110-0047    outlier_importe_eur (4120.0)

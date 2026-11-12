@@ -1,0 +1,11 @@
+{
+  "total_manifiesto": 3,
+  "validados": [],
+  "rechazados": [],
+  "ausentes": [
+    "transacciones_tienda_norte.csv",
+    "transacciones_tienda_sur.csv",
+    "transacciones_tienda_este.csv"
+  ],
+  "tasa_integridad_pct": 0.0
+}

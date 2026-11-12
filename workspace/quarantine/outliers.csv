@@ -1,0 +1,4 @@
+id_transaccion,tienda,timestamp,categoria,importe_eur,unidades,metodo_pago,origen,linea_csv,motivo
+TXE-20261110-0016,Este_Valencia,2026-11-10 12:02:54,Hogar,1480.0,1,Bizum,transacciones_tienda_este.csv,17,outlier_importe_eur
+TXE-20261110-0032,Este_Valencia,2026-11-10 14:48:52,Hogar,2750.9,4,Transferencia,transacciones_tienda_este.csv,33,outlier_importe_eur
+TXE-20261110-0047,Este_Valencia,2026-11-10 17:48:18,Hogar,4120.0,6,Efectivo,transacciones_tienda_este.csv,48,outlier_importe_eur

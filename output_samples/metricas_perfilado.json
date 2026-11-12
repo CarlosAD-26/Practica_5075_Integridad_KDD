@@ -1,0 +1,79 @@
+{
+  "generado": "2026-11-12 20:37:49",
+  "registros_brutos_cargados": 100,
+  "registros_finales": 87,
+  "registros_cuarentena_bad": 10,
+  "registros_cuarentena_outliers": 3,
+  "completitud_pct": 95.0,
+  "completitud_por_columna_pct": {
+    "id_transaccion": 98.0,
+    "tienda": 100.0,
+    "timestamp": 100.0,
+    "categoria": 99.0,
+    "importe_eur": 99.0,
+    "unidades": 100.0,
+    "metodo_pago": 99.0
+  },
+  "nulos_por_columna": {
+    "id_transaccion": 2,
+    "tienda": 0,
+    "timestamp": 0,
+    "categoria": 1,
+    "importe_eur": 1,
+    "unidades": 0,
+    "metodo_pago": 1
+  },
+  "unicidad_id_pct": 100.0,
+  "validez_dominio_pct": 90.0,
+  "retencion_final_pct": 87.0,
+  "integridad_criptografica": {
+    "total_manifiesto": 3,
+    "validados": [
+      "transacciones_tienda_norte.csv",
+      "transacciones_tienda_este.csv"
+    ],
+    "rechazados": [
+      {
+        "fichero": "transacciones_tienda_sur.csv",
+        "esperado": "0773c2cde0d45d3bfea53ebe6a0ad9f8fd7f04dabd23f55e737f64918128b83c",
+        "calculado": "1c47dff4bf34eff59390c211052be942851d158740366ab4ab35159fd9986805"
+      }
+    ],
+    "ausentes": [],
+    "tasa_integridad_pct": 66.67
+  },
+  "limites_outliers_iqr": {
+    "importe_eur": [
+      -44.85,
+      188.65
+    ],
+    "unidades": [
+      -7.0,
+      14.0
+    ]
+  },
+  "imputaciones": {
+    "categoria": 1,
+    "metodo_pago": 1
+  },
+  "motivos_rechazo": {
+    "id_transaccion_nulo": 2,
+    "importe_no_positivo": 2,
+    "unidades_menor_que_1": 2,
+    "importe_eur_nulo": 1,
+    "timestamp_corrupto": 1,
+    "timestamp_futuro": 1,
+    "timestamp_anio_anterior": 1,
+    "outlier_importe_eur": 3
+  },
+  "distribucion_importe_eur": {
+    "media": 70.99,
+    "mediana": 73.44,
+    "desv_tipica": 26.34,
+    "p25": 53.8,
+    "p75": 85.34,
+    "min": 12.5,
+    "max": 124.47
+  },
+  "completitud_dataset_final_pct": 100.0
+}
